@@ -10,7 +10,6 @@ Keeping up with the newest method developments, however, is becoming increasingl
 
 By bringing the software community of the fluorescence field together, we hope to achieve the following:
 
-```markdown
 * Provide newcomers a portal that provides an overview of existing software packages, their use cases and contact information for active developers, and a forum to ask questions or request features.
 * Provide software developers a platform to present their published or unpublished software packages and discuss problems with other developers.
 * Increase the compatibility of existing software packages through common file exchange formats and interfaces.
