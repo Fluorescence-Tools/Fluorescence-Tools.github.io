@@ -15,5 +15,6 @@ Our vision is to provide the fluorescence microscopist and spectroscopist a bag 
 
 ## Software
 
-[Software collection](../blob/master/software)
+[Software collection](https://fluorescence-tools.github.io/software)
+
 [Algorithms](https://github.com/Fluorescence-Tools)
