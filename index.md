@@ -14,4 +14,6 @@ By bringing the software community of the fluorescence field together, we hope t
 Our vision is to provide the fluorescence microscopist and spectroscopist a bag of Legos that he or she can assemble into a custom workflow with minimal effort.
 
 ## Software
-[I'm a relative reference to a repository file](../blob/master/software)
+
+[Software collection](../blob/master/software)
+[Algorithms](https://github.com/Fluorescence-Tools)
