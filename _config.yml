@@ -1,6 +1,6 @@
 
 ##The website title
-name: Fluorescence-Tools - A hub for Fluorescence spectroscopy software
+name: Fluorescence-Tools
 ##Markdown processor
 markdown: kramdown
 ##syntax highlighter. change it to pygments
@@ -14,7 +14,7 @@ sass:
 paginate: 5
 paginate_path: "page:num"
 ##The website description (to be used in meta tags)
-description: Fluorescence tools is a hub for community driven open source fluorescence spectroscopy software in biophysics
+description: A hub for community driven open source fluorescence spectroscopy software in biophysics
 ##Some frequently used keywords on your website
 keywords: Fluorescence, open software, biophysics, community
 
@@ -33,7 +33,7 @@ keywords: Fluorescence, open software, biophysics, community
 #  github: fluorescence-tools
 
 ##put desired image in img/ directory and set the value accordingly. If not defined, a placeholder image will be used.
-about_image: placeholder.jpg
+#about_image: placeholder.jpg
 ##comment this if you want full width posts with no sidebar
 sidebar: on
 
