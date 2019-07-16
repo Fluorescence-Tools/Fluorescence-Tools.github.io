@@ -1,7 +1,3 @@
----
-title: My custom title
----
-
 ## Motivation
 
 In the past decades, methodological advancements have increased our understanding of biological process from the level of the organism down to the molecular components of the cellular machinery. Fluorescence microscopy and spectroscopy are nowadays widely used to study cellular processes in real time, and provide key insights towards building a spatial, temporal and logical model of the cell as a whole.
