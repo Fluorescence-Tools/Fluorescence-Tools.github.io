@@ -1,4 +1,4 @@
-## Fluorescence-Tools - Fluorescence spectroscopy software for biophysics
+## Fluorescence spectroscopy software for biophysics
 
 ### Fluorescence tools is a hub for community driven open source fluorescence spectroscopy software in biophysics
 
