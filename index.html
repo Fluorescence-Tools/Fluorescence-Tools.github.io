@@ -1,34 +1,64 @@
 ---
-layout: home
-title: Home
-sitemap:
-priority: 1.0
-changefreq: weekly
-lastmod: 2014-07-07T16:57:30+05:30
 ---
-{% for post in paginator.posts %}
-<div class="unit whole single-post-excerpt">
-	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	<div class="meta-info">
-		<span class="meta"><time class="timeago postlist-meta" datetime="{{ post.date | date: "%Y-%m-%d" }}"><i class="fa fa-calendar"></i>{{ post.date | date: "%B %-d, %Y" }}</time></span>
-		{% if post.tags and post.tags.size > 0 %}
-			<div class="tags">
-				Tagged:
-				{% for tag in post.tags %}
-				<span><i class="fa fa-tag"></i>{{ tag }}</span>
-				{% endfor %}
-			</div>
-		{% endif %}
-	</div>
-	<p class="description">{{ post.excerpt | strip_html}}</p>
-</div>
-{% endfor %}
-<div class="unit whole paginator">
-	{% if paginator.previous_page %}
-	<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-	{% endif %}
-	<span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	{% if paginator.next_page %}
-	<a href="{{ paginator.next_page_path }}" class="next">Next</a>
-	{% endif %}
-</div>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+	<meta name="keywords" content="{{ site.keywords }}">
+	<meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="combo.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
+	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+</head>
+<body>
+  <div id="main">
+
+    <nav><ul>
+      {% for node in site.posts reversed %}
+        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
+      {% endfor %}
+    </ul></nav>
+
+
+    {% for page in site.posts reversed %}
+      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+      <div id="{{id}}" class="section p-{{id}}">
+        {% if page.icon %}
+        <div class="subtlecircle sectiondivider imaged">
+          <img src="{{page.icon}}" alt="section icon" />
+          <h5 class="icon-title">{{ page.title }}</h5>
+        </div>
+        {% elsif page.fa-icon %}
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">{{ page.title }}</h5>
+        </div>
+        {% endif %}
+        <div class="container {{ page.style }}">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endfor %}
+
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        {% capture foottext %} {% include footer.md %} {% endcapture %}
+        {{ foottext | markdownify }}
+      </div>
+    </div>
+  </div>
+
+{% include analytics.html %}
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="site.js"></script>
+</html>

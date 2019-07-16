@@ -1,40 +1,38 @@
+---
 
-##The website title
-name: Fluorescence-Tools
-##Markdown processor
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: /:title ## disables post output
+timezone: null
+lsi: false
 markdown: kramdown
-##syntax highlighter. change it to pygments
-highlighter: pygments
 
-##define base_url for valid usage in sitemap.xml and robots.txt
-base_url: http://fluorescence-tools.github.io
-sass:
-  sass_dir: _sass
-  style: :compressed
-paginate: 5
-paginate_path: "page:num"
-##The website description (to be used in meta tags)
-description: A hub for community driven open source fluorescence spectroscopy software in biophysics
-##Some frequently used keywords on your website
-keywords: Fluorescence, open software, biophysics, community
 
-##define this for disqus comment support
-#disqus: forumname
+### content configuration ###
+title:       "SinglePaged - Simple Jekyll template"
+keywords:    "SinglePaged, jekyll, template, github, blog, single page"
+description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
+source_link: "https://github.com/t413/SinglePaged"
+favicon:     "img/favicon.ico"
+touch_icon:  "img/apple-touch-icon.png"
+google_analytics_key: UA-49607422-1 ## put YOUR key here to enable tracking! (blank to disable)
 
-##set this to enable google analytics
-#ga_id: analyticsID
-#ga_domain: analyticsDomain
 
-##Some commonly used links
-#links:
-#  facebook: username
-#  twitter: username
-#  email: username@gmail.com
-#  github: fluorescence-tools
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
 
-##put desired image in img/ directory and set the value accordingly. If not defined, a placeholder image will be used.
-#about_image: placeholder.jpg
-##comment this if you want full width posts with no sidebar
-sidebar: on
-
+kramdown:
+  auto_ids:  false
 
