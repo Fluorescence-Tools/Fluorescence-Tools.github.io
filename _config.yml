@@ -26,11 +26,11 @@ keywords: Fluorescence, open software, biophysics, community
 #ga_domain: analyticsDomain
 
 ##Some commonly used links
-links:
-  facebook: username
-  twitter: username
-  email: username@gmail.com
-  github: username
+#links:
+#  facebook: username
+#  twitter: username
+#  email: username@gmail.com
+#  github: fluorescence-tools
 
 ##put desired image in img/ directory and set the value accordingly. If not defined, a placeholder image will be used.
 about_image: placeholder.jpg
