@@ -20,7 +20,7 @@ The easiest is to
 
 ## Develop jointly
 
-*
+* Once you registered your software package, add it to our collection at [GitHub](https://github.com/Fluorescence-Tools) to discuss it with other developers.
 
 ## Document
 
