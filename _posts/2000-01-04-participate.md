@@ -5,25 +5,23 @@ color: white
 fa-icon: handshake
 ---
 
-# Participate
+## Participate
 
-There are many ways you can contribute to our cause. 
+There are many ways you can contribute to our cause.
 
 The easiest is to
 
-## Spread the word
+### Spread the word
 
 * Tell your collegues and friends about this action.
 * Use your network, e.g., Twitter, Facebook, Email to spread the news.
 * Encourage your students to provide feedback to software developers
 * As developer, register your software to broaden your audience. 
 
-## Develop jointly
+### Develop jointly
 
 * Once you registered your software package, add it to our collection at [GitHub](https://github.com/Fluorescence-Tools) to discuss it with other developers.
 
-## Document
+### Document
 
-## Give feedback
-
-
+### Give feedback
